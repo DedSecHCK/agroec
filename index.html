@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Web Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand" aria-label="AgroFuturoEC">
+            <div class="logo">AgroFuturoEC</div>
+            <p class="tagline">Tus aliados agrícolas, para un agro con futuro</p>
+        </div>
+        <nav>
+            <ul>
+                <li><button class="nav-btn" data-action="inicio">Inicio</button></li>
+                <li><button class="nav-btn" data-action="inventario">Productos</button></li>
+                <li><button class="nav-btn" data-action="finanzas">Finanzas</button></li>
+                <li><button class="nav-btn" data-action="soporte">Soporte</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="inicio-cards">
+            <div class="card card-top-left">
+                <h2>Control Agrícola</h2>
+                <p>Monitorea tus cultivos en tiempo real.</p>
+                <button class="cta" data-action="control">Ir a panel</button>
+            </div>
+            <div class="card card-top-right">
+                <h2>Inventario</h2>
+                <p>Administra insumos y productos.</p>
+                <button class="cta" data-action="inventario">Ir a productos</button>
+            </div>
+            <div class="card card-bottom-left">
+                <h2>Finanzas</h2>
+                <p>Visualiza costos y ganancias.</p>
+                <button class="cta" data-action="finanzas">Ir a finanzas</button>
+            </div>
+            <div class="card card-bottom-right">
+                <h2>Soporte</h2>
+                <p>Contacta a especialistas Aero Agro.</p>
+                <button class="cta" data-action="soporte">Ir a soporte</button>
+            </div>
+        </section>
+        
+    </main>
+    <aside class="social-bar" aria-label="Redes sociales">
+        <a class="social-btn social-whatsapp" href="https://wa.me/5215512345678" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M20.52 3H3.48A.48.48 0 003 3.48v17.04c0 .265.215.48.48.48h9.177l-.45 2.715a.6.6 0 00.89.62l5.644-3.335h1.78a.48.48 0 00.48-.48V3.48A.48.48 0 0020.52 3zM12.02 18.96a6.86 6.86 0 01-3.282-.834l-3.264.968.96-3.18a6.94 6.94 0 01-.856-3.333c0-3.856 3.202-6.995 7.144-6.995a7.02 7.02 0 017.06 6.995c0 3.856-3.202 6.979-7.06 6.979zm3.369-5.252c-.184-.092-1.1-.55-1.27-.613-.17-.062-.294-.092-.417.092-.123.184-.48.613-.588.739-.107.123-.215.138-.399.046-.185-.092-.777-.344-1.479-1.095-.547-.587-.914-1.31-1.021-1.53-.108-.215-.012-.338.08-.445.092-.092.185-.246.277-.369.092-.123.123-.215.185-.354.062-.138.03-.261-.015-.369-.046-.108-.415-1.14-.568-1.563-.15-.412-.303-.355-.417-.361h-.356c-.123 0-.323.046-.492.246-.17.2-.645.672-.645 1.639 0 .966.66 1.9.753 2.035.092.138 1.301 2.12 3.147 2.968.44.2.783.325 1.05.414.44.15.841.13 1.158.08.353-.058 1.1-.479 1.257-.94.155-.461.155-.859.108-.94-.046-.081-.17-.131-.353-.23z"/>
+            </svg>
+            <span class="sr-only">WhatsApp</span>
+        </a>
+        <a class="social-btn social-facebook" href="https://www.facebook.com/aeroagro" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.495v-9.294H9.693v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.464.1 2.797.144v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.311h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/>
+            </svg>
+            <span class="sr-only">Facebook</span>
+        </a>
+        <a class="social-btn social-instagram" href="https://www.instagram.com/aeroagro" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.355 3.608 1.332.975.977 1.268 2.244 1.332 3.608.058 1.266.07 1.646.07 4.852 0 3.204-.012 3.584-.07 4.85-.064 1.364-.357 2.631-1.332 3.608-.975.977-2.242 1.27-3.608 1.332-1.266.058-1.646.07-4.85.07-3.205 0-3.585-.012-4.851-.07-1.366-.062-2.633-.355-3.608-1.332-.975-.977-1.268-2.244-1.332-3.608C2.175 15.647 2.163 15.267 2.163 12c0-3.205.012-3.585.07-4.851.063-1.364.356-2.631 1.332-3.608.975-.977 2.242-1.27 3.608-1.332C8.415 2.175 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.771.13 4.635.435 3.678 1.392 2.72 2.35 2.416 3.486 2.358 4.768 2.3 6.048 2.287 6.457 2.287 9.716v4.568c0 3.26.013 3.669.071 4.949.058 1.282.362 2.418 1.32 3.376.957.957 2.093 1.262 3.375 1.32 1.28.058 1.689.071 4.949.071 3.259 0 3.668-.013 4.948-.071 1.282-.058 2.418-.363 3.376-1.32.957-.958 1.262-2.094 1.32-3.376.058-1.28.071-1.689.071-4.949V9.716c0-3.259-.013-3.668-.071-4.948-.058-1.282-.363-2.418-1.32-3.376C20.416.434 19.28.13 17.999.072 16.719.014 16.31 0 13.051 0H12zm0 5.838A6.162 6.162 0 005.838 12 6.162 6.162 0 0012 18.162 6.162 6.162 0 0018.162 12 6.162 6.162 0 0012 5.838zm0 10.162A4 4 0 118 12a4 4 0 014 4zm6.406-11.845a1.44 1.44 0 11-2.881 0 1.44 1.44 0 012.881 0z"/>
+            </svg>
+            <span class="sr-only">Instagram</span>
+        </a>
+        <a class="social-btn social-linkedin" href="https://www.linkedin.com/company/aeroagro" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M20.447 20.452h-3.737v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.941v5.665H8.987V9h3.584v1.561h.051c.499-.946 1.717-1.946 3.534-1.946 3.777 0 4.473 2.487 4.473 5.719v6.118zM5.337 7.433a2.172 2.172 0 11.001-4.344 2.172 2.172 0 01-.001 4.344zM7.204 20.452H3.467V9h3.737v11.452z"/>
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+        </a>
+        <a class="social-btn social-x" href="https://x.com/aeroagro" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M18.244 3.5h3.486l-7.611 8.69L24 20.5h-5.742l-4.497-5.274L8.75 20.5H5.262l7.997-9.143L0 3.5h5.907l4.237 4.927L18.244 3.5z"/>
+            </svg>
+            <span class="sr-only">X</span>
+        </a>
+        <a class="social-btn social-telegram" href="https://t.me/aeroagro" target="_blank" rel="noopener noreferrer">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M23.954 4.569c-.246-1.402-1.025-1.702-2.351-1.702-1.7-.022-3.472 0-5.202 0-3.521 0-7.042-.022-10.563 0-1.674 0-2.467.317-2.714 1.7-.264 1.434-.124 3.11-.136 4.566-.011 1.963 0 3.926 0 5.889 0 1.766-.046 3.554.034 5.318.068 1.495.86 2.35 2.337 2.381 1.993.045 3.992.011 5.986.011s3.994.034 5.986-.011c1.472-.034 2.269-.899 2.339-2.389.078-1.887.034-3.786.034-5.674v-1.206c-.01-2.021.068-4.064-.034-6.073zm-3.996 3.93c-.02 2.571.014 5.143-.014 7.713-.014 1.103-.474 1.611-1.59 1.624-1.902.023-3.804.011-5.706.011-1.924 0-3.846.012-5.768-.006-1.031-.01-1.523-.507-1.535-1.538-.023-2.707-.023-5.415 0-8.122.01-1.005.516-1.5 1.535-1.511 1.972-.022 3.944-.006 5.916-.006 1.936 0 3.873-.012 5.808.006 1.07.012 1.518.53 1.545 1.62v.209z"/>
+            </svg>
+            <span class="sr-only">Telegram</span>
+        </a>
+    </aside>
+    <div id="control-panel" class="overlay hidden">
+        <div class="overlay-content">
+            <button class="overlay-close" data-close="control-panel" aria-label="Cerrar panel">&times;</button>
+            <h2>Control Agrícola</h2>
+            <p class="overlay-intro">Administra tus operaciones agrícolas desde un solo lugar. Elige una opción para comenzar o contacta a nuestro equipo técnico.</p>
+            <div class="overlay-body">
+                <div class="overlay-menu">
+                    <h3>Accesos rápidos</h3>
+                    <button class="sub-link active" data-target="monitoreo">Monitoreo de cultivos</button>
+                    <button class="sub-link" data-target="riego">Gestión de riego</button>
+                    <button class="sub-link" data-target="alertas">Alertas fitosanitarias</button>
+                    <button class="sub-link" data-target="reportes">Reportes de campo</button>
+                    <button class="sub-link" data-target="fumigacion-dron">Fumigación aérea (drones)</button>
+                    <button class="sub-link" data-target="aplicacion-terrestre">Aplicación terrestre</button>
+                </div>
+                <div class="overlay-panels">
+                    <div class="overlay-panel active" id="panel-monitoreo">
+                        <h3>Monitoreo de cultivos</h3>
+                        <p class="panel-description">Configura sensores y define los parámetros para recibir alertas tempranas sobre humedad, temperatura y salud de tus cultivos.</p>
+                        <form data-panel="monitoreo">
+                            <label>
+                                Campo o lote
+                                <select name="lote" required>
+                                    <option value="" disabled selected>Selecciona un lote</option>
+                                    <option value="norte">Lote Norte</option>
+                                    <option value="sur">Lote Sur</option>
+                                    <option value="experimental">Parcela Experimental</option>
+                                </select>
+                            </label>
+                            <div class="field-group">
+                                <span class="field-label">Sensores a activar</span>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="sensor" value="humedad"> Humedad del suelo</label>
+                                    <label><input type="checkbox" name="sensor" value="temperatura"> Temperatura ambiental</label>
+                                    <label><input type="checkbox" name="sensor" value="ph"> Nivel de pH</label>
+                                    <label><input type="checkbox" name="sensor" value="ndvi"> Índice NDVI</label>
+                                </div>
+                            </div>
+                            <label>
+                                Frecuencia de reporte (horas)
+                                <input type="number" min="1" max="24" name="frecuencia" value="6" required>
+                            </label>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Guardar monitoreo</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-riego">
+                        <h3>Gestión de riego</h3>
+                        <p class="panel-description">Programa ciclos de riego automáticos según las necesidades específicas de cada cultivo.</p>
+                        <form data-panel="riego">
+                            <label>
+                                Cultivo
+                                <input type="text" name="cultivo" placeholder="Ej. Maíz híbrido" required>
+                            </label>
+                            <label>
+                                Volumen de riego (litros/hectárea)
+                                <input type="number" min="0" step="10" name="volumen" placeholder="Ej. 1200" required>
+                            </label>
+                            <label>
+                                Calendario
+                                <input type="text" name="calendario" placeholder="Cada lunes, miércoles y viernes a las 06:00" required>
+                            </label>
+                            <label>
+                                Observaciones
+                                <textarea name="notas" rows="4" placeholder="Añade indicaciones especiales para el equipo de riego."></textarea>
+                            </label>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Planificar riego</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-alertas">
+                        <h3>Alertas fitosanitarias</h3>
+                        <p class="panel-description">Define umbrales y canales de notificación para prevenir plagas y enfermedades en los cultivos.</p>
+                        <form data-panel="alertas">
+                            <label>
+                                Tipo de riesgo
+                                <select name="riesgo" required>
+                                    <option value="" disabled selected>Selecciona un riesgo</option>
+                                    <option value="plagas">Plagas</option>
+                                    <option value="hongos">Hongos</option>
+                                    <option value="sequias">Sequías</option>
+                                    <option value="heladas">Heladas</option>
+                                </select>
+                            </label>
+                            <label>
+                                Umbral crítico
+                                <input type="text" name="umbral" placeholder="Ej. NDVI < 0.45 durante 24h" required>
+                            </label>
+                            <div class="field-group">
+                                <span class="field-label">Destinos de alerta</span>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="destino" value="sms"> SMS al responsable de campo</label>
+                                    <label><input type="checkbox" name="destino" value="email"> Email al agrónomo regional</label>
+                                    <label><input type="checkbox" name="destino" value="dashboard"> Dashboard Aero Agro</label>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Activar alertas</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-reportes">
+                        <h3>Reportes de campo</h3>
+                        <p class="panel-description">Genera informes personalizados para compartir resultados con tu equipo o clientes.</p>
+                        <form data-panel="reportes">
+                            <label>
+                                Periodo del reporte
+                                <input type="text" name="periodo" placeholder="Ej. Semana 45 (4 Nov - 10 Nov)" required>
+                            </label>
+                            <div class="field-group">
+                                <span class="field-label">Información a incluir</span>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="info" value="monitoreo" checked> Datos de monitoreo</label>
+                                    <label><input type="checkbox" name="info" value="riego"> Historial de riego</label>
+                                    <label><input type="checkbox" name="info" value="alertas"> Incidencias y alertas</label>
+                                    <label><input type="checkbox" name="info" value="rendimiento"> Rendimiento proyectado</label>
+                                </div>
+                            </div>
+                            <label>
+                                Destinatario principal
+                                <input type="email" name="destinatario" placeholder="ejecutivo@aeroagro.com" required>
+                            </label>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Generar reporte</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-fumigacion-dron">
+                        <h3>Fumigación aérea con drones</h3>
+                        <p class="panel-description">Planifica operaciones de fumigación aérea con flota certificada. Ajusta drones, altitudes y mezcla según cultivo y objetivo fitosanitario.</p>
+                        <div class="notice-card discount">
+                            <span class="notice-badge">Beneficio nuevo cliente</span>
+                            <p>Las primeras 3 aplicaciones tienen <strong>50% de descuento</strong> por dron. Aplica solo para productores finales registrados. No válido para distribuidores o revendedores Aero Agro.</p>
+                        </div>
+                        <form data-panel="fumigacion-dron">
+                            <div class="field-row">
+                                <label>
+                                    Modelo de dron
+                                    <select name="modelo" required>
+                                        <option value="" disabled selected>Selecciona modelo disponible</option>
+                                        <option value="agx-40">AeroSpray AGX-40 (40 L)</option>
+                                        <option value="agx-25">AeroSpray AGX-25 (25 L)</option>
+                                        <option value="wing-pro">WingPro 16 (16 L)</option>
+                                        <option value="nano-8">NanoPilot 8 (8 L)</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Hectáreas a fumigar
+                                    <input type="number" name="hectareas" min="1" step="0.5" placeholder="Ej. 35" required>
+                                </label>
+                            </div>
+                            <div class="field-row">
+                                <label>
+                                    Drones asignados
+                                    <input type="number" name="drones" min="1" max="10" placeholder="Ej. 3" required>
+                                </label>
+                                <label>
+                                    Ventana de operación
+                                    <input type="datetime-local" name="ventana" required>
+                                </label>
+                            </div>
+                            <div class="field-row">
+                                <label>
+                                    Tipo de aplicación
+                                    <select name="tipo" required>
+                                        <option value="foliar">Foliar</option>
+                                        <option value="insecticida">Insecticida / Plaguicida</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Altitud operacional
+                                    <select name="altitud" required>
+                                        <option value="baja">Baja (2.5 - 3.5 m)</option>
+                                        <option value="media">Media (3.5 - 4.5 m)</option>
+                                        <option value="alta">Alta (4.5 - 6 m)</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <label>
+                                Observaciones
+                                <textarea name="notas" rows="3" placeholder="Especifica mezcla, cultivos y condiciones especiales."></textarea>
+                            </label>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Programar fumigación</button>
+                            </div>
+                        </form>
+                        <div class="info-grid">
+                            <article class="info-card">
+                                <h4>Modelos y capacidad</h4>
+                                <ul class="info-list">
+                                    <li><strong>AGX-40:</strong> 40 L · Cobertura 18 ha/h · Autonomía 25 min</li>
+                                    <li><strong>AGX-25:</strong> 25 L · Cobertura 12 ha/h · Autonomía 28 min</li>
+                                    <li><strong>WingPro 16:</strong> 16 L · Cobertura 8 ha/h · Autonomía 32 min</li>
+                                    <li><strong>NanoPilot 8:</strong> 8 L · Cobertura 4 ha/h · Autonomía 36 min</li>
+                                </ul>
+                            </article>
+                            <article class="info-card">
+                                <h4>Tarifa de referencia</h4>
+                                <div class="pricing-grid">
+                                    <div class="pricing-card">
+                                        <span class="pricing-tier">Paquete inicial</span>
+                                        <strong class="pricing-value">USD 28/ha</strong>
+                                        <span class="pricing-note">Aplicaciones 1 a 3 · Descuento aplicado</span>
+                                    </div>
+                                    <div class="pricing-card">
+                                        <span class="pricing-tier">Operación estándar</span>
+                                        <strong class="pricing-value">USD 56/ha</strong>
+                                        <span class="pricing-note">Aplicaciones 4 en adelante</span>
+                                    </div>
+                                </div>
+                                <p class="pricing-disclaimer">Precio final sujeto a cultivo, mezcla y logística. Se confirma tras visita técnica.</p>
+                            </article>
+                            <article class="info-card">
+                                <h4>Parámetros operativos</h4>
+                                <ul class="info-list">
+                                    <li>Horario recomendado: 05:30 - 10:30 y 17:00 - 21:00</li>
+                                    <li>Velocidad de avance: 5 - 7 m/s · Solapes controlados automáticamente</li>
+                                    <li>Altitud ideal: 3 - 4 m para foliares · 4.5 m para plaguicidas</li>
+                                    <li>Meteorología: Viento &lt; 15 km/h · Humedad &gt; 40%</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="overlay-panel" id="panel-aplicacion-terrestre">
+                        <h3>Aplicación terrestre</h3>
+                        <p class="panel-description">Coordina brigadas terrestres con unidades autopropulsadas o mochilas motorizadas para coberturas precisas en cultivos de difícil acceso.</p>
+                        <form data-panel="aplicacion-terrestre">
+                            <div class="field-row">
+                                <label>
+                                    Equipo asignado
+                                    <select name="equipo" required>
+                                        <option value="" disabled selected>Selecciona equipo</option>
+                                        <option value="autopropulsado">Autopropulsado 24 m (3.000 L)</option>
+                                        <option value="tractor">Tractor barra 18 m (2.000 L)</option>
+                                        <option value="motomochila">Motomochila 25 L</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Hectáreas a cubrir
+                                    <input type="number" name="hectareas" min="1" step="0.5" placeholder="Ej. 45" required>
+                                </label>
+                            </div>
+                            <div class="field-row">
+                                <label>
+                                    Mezcla a aplicar
+                                    <select name="mezcla" required>
+                                        <option value="foliar">Foliar</option>
+                                        <option value="plaguicida">Insecticida / Plaguicida</option>
+                                        <option value="fungicida">Fungicida</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Fecha de ejecución
+                                    <input type="date" name="fecha" required>
+                                </label>
+                            </div>
+                            <label>
+                                Responsable en campo
+                                <input type="text" name="responsable" placeholder="Nombre del enlace en campo" required>
+                            </label>
+                            <label>
+                                Indicaciones específicas
+                                <textarea name="indicaciones" rows="3" placeholder="Anota rondas, restricciones o zonas sensibles."></textarea>
+                            </label>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Asignar brigada terrestre</button>
+                            </div>
+                        </form>
+                        <div class="info-grid">
+                            <article class="info-card">
+                                <h4>Rendimiento estimado</h4>
+                                <ul class="info-list">
+                                    <li>Autopropulsado: 45 ha/día · 3 operadores</li>
+                                    <li>Tractor barra: 32 ha/día · 2 operadores</li>
+                                    <li>Motomochila: 8 ha/día · cuadrilla de 4 aplicadores</li>
+                                </ul>
+                            </article>
+                            <article class="info-card">
+                                <h4>Ventanas sugeridas</h4>
+                                <ul class="info-list">
+                                    <li>Mañanas frescas (06:30 - 11:00)</li>
+                                    <li>Tardes templadas (16:30 - 19:30)</li>
+                                    <li>Evitar temperatura &gt; 30°C y vientos &gt; 18 km/h</li>
+                                </ul>
+                            </article>
+                            <article class="info-card">
+                                <h4>Notas de seguridad</h4>
+                                <ul class="info-list">
+                                    <li>Uso obligatorio de EPP certificado</li>
+                                    <li>Registro fotográfico antes/después</li>
+                                    <li>Reportar incidencias en 60 minutos</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="inventario-panel" class="overlay hidden">
+        <div class="overlay-content">
+            <button class="overlay-close" data-close="inventario-panel" aria-label="Cerrar inventario">&times;</button>
+            <h2>Inventario de Productos</h2>
+            <p class="overlay-intro">Explora nuestra línea de insumos agrícolas organizados por categoría. Cada ficha detalla formulación y presentación para ayudarte a planificar tu abastecimiento.</p>
+            <div class="overlay-body">
+                <div class="overlay-menu">
+                    <h3>Categorías</h3>
+                    <button class="sub-link active" data-target="foliares">Foliares</button>
+                    <button class="sub-link" data-target="edaficos">Edáficos</button>
+                    <button class="sub-link" data-target="insecticidas">Insecticidas y plaguicidas</button>
+                    <button class="sub-link" data-target="herbicidas">Herbicidas</button>
+                </div>
+                <div class="overlay-panels">
+                    <div class="overlay-panel active" id="panel-foliares">
+                        <h3>Fertilizantes foliares</h3>
+                        <p class="panel-description">Soluciones de aplicación foliar para nutrición inmediata y corrección de deficiencias en etapas críticas.</p>
+                        <div class="product-grid">
+                            <article class="product-card">
+                                <div class="product-thumb gradient-green" role="img" aria-label="BioBoost Foliar"></div>
+                                <div class="product-info">
+                                    <h4>BioBoost Foliar</h4>
+                                    <p>Bioestimulante con aminoácidos libres y microelementos quelatados para fases de brotación.</p>
+                                    <span class="tag">Presentación: 1 L | 5 L</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-teal" role="img" aria-label="KelMax Zn-Mn"></div>
+                                <div class="product-info">
+                                    <h4>KelMax Zn-Mn</h4>
+                                    <p>Formulación foliar con zinc y manganeso de alta afinidad, ideal para granos y cereales.</p>
+                                    <span class="tag">Densidad: 1.32 g/ml</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-lime" role="img" aria-label="FolGreen Premium"></div>
+                                <div class="product-info">
+                                    <h4>FolGreen Premium</h4>
+                                    <p>Nutriente foliar completo con extractos de algas pardas para estrés térmico.</p>
+                                    <span class="tag">Certificación: Orgánico UE</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-mint" role="img" aria-label="Canopy Charge"></div>
+                                <div class="product-info">
+                                    <h4>Canopy Charge</h4>
+                                    <p>Complejo foliar con nitrógeno estabilizado y potasio para sostener llenado de fruto.</p>
+                                    <span class="tag">Compatibilidad: Pulverización aérea</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-sky" role="img" aria-label="VitalMist Ca-B"></div>
+                                <div class="product-info">
+                                    <h4>VitalMist Ca-B</h4>
+                                    <p>Calcio y boro de rápida absorción para corregir fisiopatías en cultivos frutales.</p>
+                                    <span class="tag">Aplicación: Post-floración</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-purple" role="img" aria-label="LeafPulse 20-20-20"></div>
+                                <div class="product-info">
+                                    <h4>LeafPulse 20-20-20</h4>
+                                    <p>Fertilizante foliar balanceado con micronutrientes quelatados y agentes humectantes.</p>
+                                    <span class="tag">Solubilidad: Instantánea</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-sunset" role="img" aria-label="EcoFol Mix"></div>
+                                <div class="product-info">
+                                    <h4>EcoFol Mix</h4>
+                                    <p>Blend orgánico con extractos vegetales para activar resistencia sistémica.</p>
+                                    <span class="tag">Certificado: Insumos Bio</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-gold" role="img" aria-label="BloomWave"></div>
+                                <div class="product-info">
+                                    <h4>BloomWave</h4>
+                                    <p>Inductor foliar de floración con fosfitos y algas de aguas frías.</p>
+                                    <span class="tag">Uso: Etapa reproductiva</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-coral" role="img" aria-label="QuickLeaf Iron"></div>
+                                <div class="product-info">
+                                    <h4>QuickLeaf Iron</h4>
+                                    <p>Quelato férrico foliar para recuperar coloración en cítricos y ornamentales.</p>
+                                    <span class="tag">Presentación: 500 ml</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-aqua" role="img" aria-label="Spectrum Foliar"></div>
+                                <div class="product-info">
+                                    <h4>Spectrum Foliar</h4>
+                                    <p>Complejo multinutriente con magnesio y molibdeno para mejorar fotosíntesis.</p>
+                                    <span class="tag">Aplicación: Nebulización</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-slate" role="img" aria-label="Radiant K30"></div>
+                                <div class="product-info">
+                                    <h4>Radiant K30</h4>
+                                    <p>Potasio foliar de liberación constante con agentes adherentes anti-lluvia.</p>
+                                    <span class="tag">pH recomendado: 6.2</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-blush" role="img" aria-label="PulseGuard Boro"></div>
+                                <div class="product-info">
+                                    <h4>PulseGuard Boro</h4>
+                                    <p>Solución foliar con boro estabilizado y aminoácidos para cuaje uniforme.</p>
+                                    <span class="tag">Intervalo: Cada 14 días</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="overlay-panel" id="panel-edaficos">
+                        <h3>Fertilizantes edáficos</h3>
+                        <p class="panel-description">Productos para aplicación al suelo que favorecen estructura, retención hídrica y aporte de nutrientes.</p>
+                        <div class="product-grid">
+                            <article class="product-card">
+                                <div class="product-thumb gradient-earth" role="img" aria-label="SoilCore 15-5-10"></div>
+                                <div class="product-info">
+                                    <h4>SoilCore 15-5-10</h4>
+                                    <p>Granulado de liberación controlada con aporte balanceado de nitrógeno, fósforo y potasio.</p>
+                                    <span class="tag">Formato: 25 kg</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-bronze" role="img" aria-label="Humiforce Pro"></div>
+                                <div class="product-info">
+                                    <h4>Humiforce Pro</h4>
+                                    <p>Mejorador edáfico con ácidos húmicos y fúlvicos para suelos salinizados.</p>
+                                    <span class="tag">Aplicación: Pre-siembra</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-brown" role="img" aria-label="RhizoBalance"></div>
+                                <div class="product-info">
+                                    <h4>RhizoBalance</h4>
+                                    <p>Inoculante granular con consorcio microbiano para rizósfera activa y mayor absorción.</p>
+                                    <span class="tag">Compatibilidad: Riego por goteo</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-copper" role="img" aria-label="TerraLift Micro"></div>
+                                <div class="product-info">
+                                    <h4>TerraLift Micro</h4>
+                                    <p>Microgranulado con calcio, magnesio y azufre elemental para activar microbiota del suelo.</p>
+                                    <span class="tag">Curva de liberación: 120 días</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-moss" role="img" aria-label="EcoSoil Matrix"></div>
+                                <div class="product-info">
+                                    <h4>EcoSoil Matrix</h4>
+                                    <p>Compost mineralizado con silicio y extractos vegetales para mejorar estructura.</p>
+                                    <span class="tag">Materia orgánica: 38%</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-sand" role="img" aria-label="DeepRoot Calcio"></div>
+                                <div class="product-info">
+                                    <h4>DeepRoot Calcio</h4>
+                                    <p>Corrector granular de calcio con agente humectante para compactaciones severas.</p>
+                                    <span class="tag">Aplicación: Vía bandeo</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-ocean" role="img" aria-label="AquaHold Polímero"></div>
+                                <div class="product-info">
+                                    <h4>AquaHold Polímero</h4>
+                                    <p>Polímero superabsorbente para retención hídrica y reducción de estrés por sequía.</p>
+                                    <span class="tag">Capacidad: 300x peso</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-midnight" role="img" aria-label="Nutrisoil Forte"></div>
+                                <div class="product-info">
+                                    <h4>Nutrisoil Forte</h4>
+                                    <p>Fertirriego granular con nitrógeno estabilizado y biopolímeros para suelos arenosos.</p>
+                                    <span class="tag">Dosis: 200 kg/ha</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="overlay-panel" id="panel-insecticidas">
+                        <h3>Insecticidas y plaguicidas</h3>
+                        <p class="panel-description">Referencias para manejo integrado de plagas con diferentes modos de acción.</p>
+                        <div class="product-grid">
+                            <article class="product-card">
+                                <div class="product-thumb gradient-orange" role="img" aria-label="ShieldMax 480 EC"></div>
+                                <div class="product-info">
+                                    <h4>ShieldMax 480 EC</h4>
+                                    <p>Lambda-cihalotrina emulsionable para control de lepidópteros y chupadores.</p>
+                                    <span class="tag">Carencia: 7 días</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-red" role="img" aria-label="BioGuard Neem"></div>
+                                <div class="product-info">
+                                    <h4>BioGuard Neem</h4>
+                                    <p>Extracto botánico de neem con acción antialimentaria y repelente.</p>
+                                    <span class="tag">Uso: Hortícolas y frutales</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-amber" role="img" aria-label="Triact Max"></div>
+                                <div class="product-info">
+                                    <h4>Triact Max</h4>
+                                    <p>Suspensión concentrada con imidacloprid y bifentrina de amplio espectro.</p>
+                                    <span class="tag">Compatibilidad: FOL/ED</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-sunset" role="img" aria-label="Larvex Duo"></div>
+                                <div class="product-info">
+                                    <h4>Larvex Duo</h4>
+                                    <p>Combinación de espinetoram y lufenurón para ruptura de ciclo larvario.</p>
+                                    <span class="tag">Dosis: 80 ml/ha</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-gold" role="img" aria-label="CropShield Beta"></div>
+                                <div class="product-info">
+                                    <h4>CropShield Beta</h4>
+                                    <p>Beta-ciflutrina microencapsulada para descargas prolongadas en algodón.</p>
+                                    <span class="tag">Ventana: 21 días</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-coral" role="img" aria-label="FlyAway Ultra"></div>
+                                <div class="product-info">
+                                    <h4>FlyAway Ultra</h4>
+                                    <p>Formula concentrada con cipermetrina para mosca blanca y trips.</p>
+                                    <span class="tag">Modo: Contacto/ingestión</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-ember" role="img" aria-label="Pyridrine 350 SC"></div>
+                                <div class="product-info">
+                                    <h4>Pyridrine 350 SC</h4>
+                                    <p>Suspensión concentrada de piriproxifen para control de ninfas.</p>
+                                    <span class="tag">Aplicación: Inicio brotación</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-crimson" role="img" aria-label="NoctuFlash"></div>
+                                <div class="product-info">
+                                    <h4>NoctuFlash</h4>
+                                    <p>Mezcla sistémica para manejo de noctuidos resistentes en maíz.</p>
+                                    <span class="tag">Intervalo: 14 días</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-aurora" role="img" aria-label="GreenProtec BT"></div>
+                                <div class="product-info">
+                                    <h4>GreenProtec BT</h4>
+                                    <p>Bacillus thuringiensis con cepa kurstaki para producción orgánica.</p>
+                                    <span class="tag">Certificación: OMRI</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-steel" role="img" aria-label="VectorLine 240"></div>
+                                <div class="product-info">
+                                    <h4>VectorLine 240</h4>
+                                    <p>Clorpirifos microencapsulado para barreras contra hormigas cortadoras.</p>
+                                    <span class="tag">Presentación: 20 L</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-purple" role="img" aria-label="HexaStrike"></div>
+                                <div class="product-info">
+                                    <h4>HexaStrike</h4>
+                                    <p>Indoxacarb y tiametoxam con acción ingestiva en lepidópteros y hemípteros.</p>
+                                    <span class="tag">Compatibilidad: Aceites minerales</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-mint" role="img" aria-label="SporaClean"></div>
+                                <div class="product-info">
+                                    <h4>SporaClean</h4>
+                                    <p>Insecticida biológico con Beauveria bassiana y aditivos mojantes.</p>
+                                    <span class="tag">Intervalo de reingreso: 4 h</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-teal" role="img" aria-label="CitrusGuard Oil"></div>
+                                <div class="product-info">
+                                    <h4>CitrusGuard Oil</h4>
+                                    <p>Aceite mineral altamente refinado para cochinilla y escamas en cítricos.</p>
+                                    <span class="tag">Uso: Frutales perennes</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-orange" role="img" aria-label="AgriPyre 25 EC"></div>
+                                <div class="product-info">
+                                    <h4>AgriPyre 25 EC</h4>
+                                    <p>Concentrado emulsionable de piretrinas naturales para cultivos orgánicos.</p>
+                                    <span class="tag">Carencia: 1 día</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-slate" role="img" aria-label="StingFree Pro"></div>
+                                <div class="product-info">
+                                    <h4>StingFree Pro</h4>
+                                    <p>Flupyradifurone sistémico para áfidos y psílidos con efecto antisap.</p>
+                                    <span class="tag">Dosis: 300 ml/ha</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-blush" role="img" aria-label="HopperStop"></div>
+                                <div class="product-info">
+                                    <h4>HopperStop</h4>
+                                    <p>Metarhizium anisopliae específico para saltamontes en pasturas.</p>
+                                    <span class="tag">Aplicación: ULV</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-midnight" role="img" aria-label="Sentinel Nova"></div>
+                                <div class="product-info">
+                                    <h4>Sentinel Nova</h4>
+                                    <p>Rotación química con spinetoram y flonicamida para plagas multirresistentes.</p>
+                                    <span class="tag">Fase: Brotación activa</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-aqua" role="img" aria-label="AerialLock"></div>
+                                <div class="product-info">
+                                    <h4>AerialLock</h4>
+                                    <p>Formulación aérea con malatión para tratamientos rápidos en grandes superficies.</p>
+                                    <span class="tag">Cobertura: 30 ha/hora</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="overlay-panel" id="panel-herbicidas">
+                        <h3>Herbicidas</h3>
+                        <p class="panel-description">Selección para control de malezas pre y post emergentes en cultivos extensivos.</p>
+                        <div class="product-grid">
+                            <article class="product-card">
+                                <div class="product-thumb gradient-forest" role="img" aria-label="ClearField Duo"></div>
+                                <div class="product-info">
+                                    <h4>ClearField Duo</h4>
+                                    <p>Mezcla selectiva de imazamox y imazapic para soya y girasol tolerantes.</p>
+                                    <span class="tag">Modo: Post-emergente</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-olive" role="img" aria-label="SoilLock 900 WG"></div>
+                                <div class="product-info">
+                                    <h4>SoilLock 900 WG</h4>
+                                    <p>Pre-emergente a base de metribuzin para malezas de hoja ancha.</p>
+                                    <span class="tag">Dosis: 0.6 kg/ha</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-steel" role="img" aria-label="GlifoPower Plus"></div>
+                                <div class="product-info">
+                                    <h4>GlifoPower Plus</h4>
+                                    <p>Glifosato potenciado con surfactante SiliconFlex para malezas difíciles.</p>
+                                    <span class="tag">Uso: Banda dirigida</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-moss" role="img" aria-label="GrassLock Duo"></div>
+                                <div class="product-info">
+                                    <h4>GrassLock Duo</h4>
+                                    <p>Haloxifop y quizalofop de acción selectiva para gramíneas en soya.</p>
+                                    <span class="tag">Reentrada: 12 h</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-sand" role="img" aria-label="WeedSweep 480"></div>
+                                <div class="product-info">
+                                    <h4>WeedSweep 480</h4>
+                                    <p>Paraquat y diquat para quemado rápido de maleza previa a siembra directa.</p>
+                                    <span class="tag">Intervalo: 3 días</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-copper" role="img" aria-label="ClearPath Flex"></div>
+                                <div class="product-info">
+                                    <h4>ClearPath Flex</h4>
+                                    <p>Herbicida selectivo con flumioxazina y metolacloro para rotaciones intensivas.</p>
+                                    <span class="tag">Uso: Pre-siembra</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-earth" role="img" aria-label="RootBlock Pre"></div>
+                                <div class="product-info">
+                                    <h4>RootBlock Pre</h4>
+                                    <p>Granulado de pendimetalina para control residual de gramíneas anuales.</p>
+                                    <span class="tag">Persistencia: 60 días</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-gold" role="img" aria-label="HarvestShield"></div>
+                                <div class="product-info">
+                                    <h4>HarvestShield</h4>
+                                    <p>Saflufenacil de contacto rápido con tecnología de anti-deriva incluida.</p>
+                                    <span class="tag">Aplicación: Pre-cosecha</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-teal" role="img" aria-label="SoilSafe Contact"></div>
+                                <div class="product-info">
+                                    <h4>SoilSafe Contact</h4>
+                                    <p>Herbicida orgánico con ácido pelargónico para horticultura de exportación.</p>
+                                    <span class="tag">Certificación: GlobalG.A.P.</span>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-thumb gradient-purple" role="img" aria-label="EdgeLine Max"></div>
+                                <div class="product-info">
+                                    <h4>EdgeLine Max</h4>
+                                    <p>Glufosinato optimizado con surfactante siliconado para orillas y bordes.</p>
+                                    <span class="tag">Cobertura: 400 L/ha</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="finanzas-panel" class="overlay hidden">
+        <div class="overlay-content">
+            <button class="overlay-close" data-close="finanzas-panel" aria-label="Cerrar finanzas">&times;</button>
+            <h2>Gestión financiera</h2>
+            <p class="overlay-intro">Administra el ciclo de crédito agrícola desde la solicitud hasta el seguimiento de pagos y reclamos. Mantén el control de cada operación para garantizar liquidez y disponibilidad de insumos clave.</p>
+            <div class="overlay-body">
+                <div class="overlay-menu">
+                    <h3>Funciones</h3>
+                    <button class="sub-link active" data-target="solicitud">Solicitud de crédito</button>
+                    <button class="sub-link" data-target="pagos">Consulta de pagos</button>
+                    <button class="sub-link" data-target="disponibilidad">Disponibilidad de insumos</button>
+                    <button class="sub-link" data-target="acciones">Acciones y reclamaciones</button>
+                </div>
+                <div class="overlay-panels">
+                    <div class="overlay-panel active" id="panel-solicitud">
+                        <h3>Solicitud de crédito</h3>
+                        <p class="panel-description">Registra una nueva solicitud de crédito agrícola incluyendo destino del financiamiento y garantías ofrecidas.</p>
+                        <form data-panel="solicitud">
+                            <div class="field-row">
+                                <label>
+                                    Productor o razón social
+                                    <input type="text" name="cliente" placeholder="Ej. Agro Campo Verde S.A." required>
+                                </label>
+                                <label>
+                                    Número de identificación
+                                    <input type="text" name="documento" placeholder="RFC / NIT / DNI" required>
+                                </label>
+                            </div>
+                            <label>
+                                Línea de crédito solicitada
+                                <select name="linea" required>
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="insumos">Compra de insumos</option>
+                                    <option value="operativo">Capital operativo</option>
+                                    <option value="infraestructura">Infraestructura agrícola</option>
+                                </select>
+                            </label>
+                            <div class="field-row">
+                                <label>
+                                    Monto solicitado (USD)
+                                    <input type="number" name="monto" min="1000" step="100" placeholder="Ej. 25000" required>
+                                </label>
+                                <label>
+                                    Plazo estimado (meses)
+                                    <input type="number" name="plazo" min="3" max="48" step="1" value="12" required>
+                                </label>
+                            </div>
+                            <label>
+                                Garantías ofrecidas
+                                <textarea name="garantia" rows="3" placeholder="Detalle garantías, avales o pólizas asociadas." required></textarea>
+                            </label>
+                            <label>
+                                Observaciones adicionales
+                                <textarea name="notas" rows="3" placeholder="Ej. Uso proyectado, plan de amortización, respaldo de cosecha."></textarea>
+                            </label>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Registrar solicitud</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-pagos">
+                        <h3>Consulta de pagos</h3>
+                        <p class="panel-description">Obtén el calendario de pagos, cuotas pendientes y montos actualizados para una línea de crédito específica.</p>
+                        <form data-panel="pagos">
+                            <div class="field-row">
+                                <label>
+                                    Código de crédito
+                                    <input type="text" name="folio" placeholder="Ej. CR-2025-1045" required>
+                                </label>
+                                <label>
+                                    Periodo a consultar
+                                    <select name="periodo" required>
+                                        <option value="" disabled selected>Selecciona periodo</option>
+                                        <option value="actual">Mes actual</option>
+                                        <option value="trimestre">Trimestre vigente</option>
+                                        <option value="historico">Historial completo</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="finance-summary">
+                                <div class="summary-card">
+                                    <span class="summary-label">Próxima cuota</span>
+                                    <strong class="summary-value">USD 1,280</strong>
+                                    <span class="summary-detail">Vence el 28/11/2025</span>
+                                </div>
+                                <div class="summary-card">
+                                    <span class="summary-label">Saldo restante</span>
+                                    <strong class="summary-value">USD 14,720</strong>
+                                    <span class="summary-detail">7 cuotas pendientes</span>
+                                </div>
+                                <div class="summary-card">
+                                    <span class="summary-label">Estado</span>
+                                    <span class="status-chip status-on-time">Al día</span>
+                                    <span class="summary-detail">Sin incidencias registradas</span>
+                                </div>
+                            </div>
+                            <div class="table-wrapper">
+                                <table class="finance-table" aria-label="Calendario de pagos simulado">
+                                    <thead>
+                                        <tr>
+                                            <th>Cuota</th>
+                                            <th>Fecha</th>
+                                            <th>Monto</th>
+                                            <th>Capital</th>
+                                            <th>Interés</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>05/12</td>
+                                            <td>28/11/2025</td>
+                                            <td>USD 1,280</td>
+                                            <td>USD 980</td>
+                                            <td>USD 300</td>
+                                            <td><span class="status-chip status-pending">Pendiente</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>04/12</td>
+                                            <td>28/10/2025</td>
+                                            <td>USD 1,280</td>
+                                            <td>USD 960</td>
+                                            <td>USD 320</td>
+                                            <td><span class="status-chip status-paid">Pagada</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>03/12</td>
+                                            <td>28/09/2025</td>
+                                            <td>USD 1,280</td>
+                                            <td>USD 945</td>
+                                            <td>USD 335</td>
+                                            <td><span class="status-chip status-paid">Pagada</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Actualizar consulta</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-disponibilidad">
+                        <h3>Disponibilidad de insumos</h3>
+                        <p class="panel-description">Valida si los insumos solicitados a crédito se encuentran disponibles para entrega inmediata o requieren programación.</p>
+                        <form data-panel="disponibilidad">
+                            <div class="field-row">
+                                <label>
+                                    Categoría de insumo
+                                    <select name="categoria" required>
+                                        <option value="" disabled selected>Selecciona una categoría</option>
+                                        <option value="foliares">Foliares</option>
+                                        <option value="edaficos">Edáficos</option>
+                                        <option value="insecticidas">Insecticidas y plaguicidas</option>
+                                        <option value="herbicidas">Herbicidas</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Producto objetivo
+                                    <input type="text" name="producto" placeholder="Ej. SoilCore 15-5-10" required>
+                                </label>
+                            </div>
+                            <div class="availability-result" aria-live="polite">
+                                <div class="status-chip status-available">Disponible en almacén central</div>
+                                <p class="result-detail">Stock estimado: 180 unidades · Pedido mínimo a crédito: 20 unidades · Tiempo de despacho: 48 h</p>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Verificar disponibilidad</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-acciones">
+                        <h3>Acciones y reclamaciones</h3>
+                        <p class="panel-description">Gestiona la baja de solicitudes, registra reclamaciones o incidentes asociados a la cartera de crédito agrícola.</p>
+                        <div class="panel-section">
+                            <h4>Dar de baja una solicitud</h4>
+                            <form data-panel="baja">
+                                <div class="field-row">
+                                    <label>
+                                        Folio de solicitud
+                                        <input type="text" name="folio_baja" placeholder="Ej. SC-2025-087" required>
+                                    </label>
+                                    <label>
+                                        Motivo principal
+                                        <select name="motivo" required>
+                                            <option value="" disabled selected>Selecciona motivo</option>
+                                            <option value="duplicada">Solicitud duplicada</option>
+                                            <option value="cliente">Cancelación por cliente</option>
+                                            <option value="riesgo">Evaluación de riesgo negativa</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <label>
+                                    Comentarios adicionales
+                                    <textarea name="comentarios_baja" rows="3" placeholder="Describe el contexto de la cancelación."></textarea>
+                                </label>
+                                <div class="form-actions">
+                                    <button type="submit" class="cta">Dar de baja</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-section">
+                            <h4>Reclamaciones e incidentes</h4>
+                            <form data-panel="reclamo">
+                                <div class="field-row">
+                                    <label>
+                                        Crédito involucrado
+                                        <input type="text" name="credito_incidente" placeholder="Ej. CR-2025-1045" required>
+                                    </label>
+                                    <label>
+                                        Tipo de incidente
+                                        <select name="tipo_incidente" required>
+                                            <option value="" disabled selected>Selecciona tipo</option>
+                                            <option value="cargo">Cargo incorrecto</option>
+                                            <option value="aplicacion">Pago no aplicado</option>
+                                            <option value="entrega">Retraso en entrega de insumo</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <label>
+                                    Descripción del incidente
+                                    <textarea name="descripcion_incidente" rows="4" placeholder="Detalla lo ocurrido, responsables y evidencias disponibles." required></textarea>
+                                </label>
+                                <div class="field-row">
+                                    <label>
+                                        Prioridad
+                                        <select name="prioridad" required>
+                                            <option value="alta">Alta</option>
+                                            <option value="media" selected>Media</option>
+                                            <option value="baja">Baja</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        Canal de respuesta preferido
+                                        <select name="canal" required>
+                                            <option value="email">Email</option>
+                                            <option value="llamada">Llamada telefónica</option>
+                                            <option value="visita">Visita en campo</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="cta">Enviar reclamación</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="soporte-panel" class="overlay hidden">
+        <div class="overlay-content">
+            <button class="overlay-close" data-close="soporte-panel" aria-label="Cerrar soporte">&times;</button>
+            <h2>Soporte especializado</h2>
+            <p class="overlay-intro">Contacta directamente con nuestros responsables técnicos o registra solicitudes para dar seguimiento a incidencias, capacitación y novedades de productos.</p>
+            <div class="overlay-body">
+                <div class="overlay-menu">
+                    <h3>Secciones</h3>
+                    <button class="sub-link active" data-target="equipo">Equipo responsable</button>
+                    <button class="sub-link" data-target="solicitudes">Solicitudes de interés</button>
+                    <button class="sub-link" data-target="novedades">Novedades y descuentos</button>
+                </div>
+                <div class="overlay-panels">
+                    <div class="overlay-panel active" id="panel-equipo">
+                        <h3>Equipo responsable</h3>
+                        <p class="panel-description">Ubica al especialista indicado según la fase del servicio. Cada responsable cuenta con línea directa y correo prioritario.</p>
+                        <div class="contact-grid">
+                            <article class="contact-card">
+                                <div class="contact-header">
+                                    <span class="contact-role">Formulador responsable</span>
+                                    <span class="highlight-tag">Cobertura 24/7</span>
+                                </div>
+                                <h4>Ing. Mariana López</h4>
+                                <p class="contact-summary">Compatibilidad de mezclas, ajustes de dosis y planes nutricionales foliares.</p>
+                                <ul class="contact-channels">
+                                    <li><span class="channel-label">Tel:</span> <a href="tel:+5215512345678">+52 1 55 1234 5678</a></li>
+                                    <li><span class="channel-label">WhatsApp:</span> <a href="https://wa.me/5215512345678" target="_blank" rel="noopener">Disponible</a></li>
+                                    <li><span class="channel-label">Email:</span> <a href="mailto:m.lopez@aeroagro.com">m.lopez@aeroagro.com</a></li>
+                                </ul>
+                            </article>
+                            <article class="contact-card">
+                                <div class="contact-header">
+                                    <span class="contact-role">Agrónomo Ing. responsable</span>
+                                    <span class="highlight-tag">Visitas en campo</span>
+                                </div>
+                                <h4>Ing. Carlos Méndez</h4>
+                                <p class="contact-summary">Diagnóstico de lotes, interpretación de analíticas y recomendaciones integrales.</p>
+                                <ul class="contact-channels">
+                                    <li><span class="channel-label">Tel:</span> <a href="tel:+573102224455">+57 310 222 4455</a></li>
+                                    <li><span class="channel-label">Email:</span> <a href="mailto:c.mendez@aeroagro.com">c.mendez@aeroagro.com</a></li>
+                                    <li><span class="channel-label">Agenda:</span> <a href="mailto:agenda.campo@aeroagro.com" class="inline-link">Solicitar visita</a></li>
+                                </ul>
+                            </article>
+                            <article class="contact-card">
+                                <div class="contact-header">
+                                    <span class="contact-role">Aplicador responsable</span>
+                                    <span class="highlight-tag">Turnos nocturnos</span>
+                                </div>
+                                <h4>Cap. Daniel Ortega</h4>
+                                <p class="contact-summary">Programación de aplicaciones, calibración de equipos y protocolos de seguridad.</p>
+                                <ul class="contact-channels">
+                                    <li><span class="channel-label">Tel:</span> <a href="tel:+59892145670">+598 92 145 670</a></li>
+                                    <li><span class="channel-label">Radio:</span> Canal 12.45 MHz</li>
+                                    <li><span class="channel-label">Email:</span> <a href="mailto:d.ortega@aeroagro.com">d.ortega@aeroagro.com</a></li>
+                                </ul>
+                            </article>
+                            <article class="contact-card">
+                                <div class="contact-header">
+                                    <span class="contact-role">Despachadores</span>
+                                    <span class="highlight-tag">Distribución 48 h</span>
+                                </div>
+                                <h4>Centro Logístico Bajío</h4>
+                                <p class="contact-summary">Coordinación de entregas, seguimiento de guías y control de incidencias de despacho.</p>
+                                <ul class="contact-channels">
+                                    <li><span class="channel-label">Tel:</span> <a href="tel:+524771112233">+52 477 111 2233</a></li>
+                                    <li><span class="channel-label">Email:</span> <a href="mailto:logistica@aeroagro.com">logistica@aeroagro.com</a></li>
+                                    <li><span class="channel-label">Horario:</span> Lun-Sáb · 07:00 - 19:00</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="overlay-panel" id="panel-solicitudes">
+                        <h3>Solicitudes de interés</h3>
+                        <p class="panel-description">Consulta folios activos o registra nuevas solicitudes para capacitaciones, incidencias y asesorías técnicas.</p>
+                        <div class="folio-strip" aria-live="polite">
+                            <span class="folio-chip">Folio activo · SI-2025-014</span>
+                            <span class="folio-chip">SI-2025-011 · Capacitación</span>
+                            <span class="folio-chip">SI-2025-009 · Incidencia resuelta</span>
+                        </div>
+                        <form data-panel="soporte-solicitudes">
+                            <div class="field-row">
+                                <label>
+                                    Folio (si existe)
+                                    <input type="text" name="folio" placeholder="Ej. SI-2025-015">
+                                </label>
+                                <label>
+                                    Tipo de solicitud
+                                    <select name="tipo" required>
+                                        <option value="" disabled selected>Selecciona un tipo</option>
+                                        <option value="asesoria">Asesoría técnica</option>
+                                        <option value="incidencia">Incidencia</option>
+                                        <option value="capacitacion">Capacitación</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <label>
+                                Descripción
+                                <textarea name="descripcion" rows="4" placeholder="Detalla el requerimiento, cultivo involucrado y urgencia." required></textarea>
+                            </label>
+                            <div class="field-row">
+                                <label>
+                                    Prioridad
+                                    <select name="prioridad" required>
+                                        <option value="media" selected>Media</option>
+                                        <option value="alta">Alta</option>
+                                        <option value="baja">Baja</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Contacto de referencia
+                                    <input type="email" name="contacto" placeholder="coordinador@tuempresa.com" required>
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Registrar solicitud</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="overlay-panel" id="panel-novedades">
+                        <h3>Novedades y descuentos</h3>
+                        <p class="panel-description">Mantente al día con nuevas formulaciones, paquetes promocionales y calendarios de capacitación.</p>
+                        <div class="update-board">
+                            <article class="update-card">
+                                <span class="update-badge">Nuevo</span>
+                                <h4>Paquete foliar + edáfico</h4>
+                                <p>Bonificación del 12% en combinaciones BioBoost + Humiforce para lotes de 50 ha durante noviembre.</p>
+                                <span class="update-meta">Válido hasta 30/11/2025</span>
+                            </article>
+                            <article class="update-card">
+                                <span class="update-badge badge-info">Capacitación</span>
+                                <h4>Jornada de aplicaciones nocturnas</h4>
+                                <p>Sesión práctica con el equipo de aplicadores responsables y protocolos de seguridad actualizados.</p>
+                                <span class="update-meta">Sesión virtual · 21/11/2025</span>
+                            </article>
+                            <article class="update-card">
+                                <span class="update-badge badge-discount">Descuento</span>
+                                <h4>Kit control de plagas</h4>
+                                <p>15% de descuento en combos ShieldMax + BioGuard Neem para entregas programadas en diciembre.</p>
+                                <span class="update-meta">Cupón: AGRO-NOV-15</span>
+                            </article>
+                        </div>
+                        <form data-panel="soporte-novedades" class="subscribe-form">
+                            <div class="field-row">
+                                <label>
+                                    Nombre o razón social
+                                    <input type="text" name="suscriptor" placeholder="Ej. Cooperativa Los Olivos" required>
+                                </label>
+                                <label>
+                                    Correo electrónico
+                                    <input type="email" name="correo" placeholder="contacto@empresa.com" required>
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="cta">Suscribirme a novedades</button>
+                                <button type="button" class="secondary-btn">Descargar calendario</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Tu Negocio. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Anime.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Three.js Core CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Three.js Postprocessing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/Pass.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/shaders/FilmShader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/FilmPass.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
