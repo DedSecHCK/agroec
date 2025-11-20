@@ -1,8 +1,74 @@
 document.addEventListener('DOMContentLoaded', () => {
+            // Cursor personalizado tipo TargetCursor
+            const cursorWrapper = document.getElementById('target-cursor-wrapper');
+            const cursorDot = document.getElementById('target-cursor-dot');
+            const corners = cursorWrapper.querySelectorAll('.target-cursor-corner');
+            let cursorVisible = true;
+
+            // Oculta el cursor nativo
+            document.body.style.cursor = 'none';
+
+            // Mueve el cursor personalizado
+            window.addEventListener('mousemove', e => {
+                cursorWrapper.style.left = `${e.clientX}px`;
+                cursorWrapper.style.top = `${e.clientY}px`;
+            });
+
+            // Animación de corners y selección al pasar sobre .cursor-target
+            document.querySelectorAll('.cursor-target').forEach(target => {
+                target.addEventListener('mouseenter', () => {
+                    corners.forEach(corner => {
+                        corner.style.transition = 'transform 0.3s cubic-bezier(0.77,0,0.175,1)';
+                        corner.style.transform += ' scale(1.3)';
+                    });
+                    cursorDot.style.background = '#f9d423';
+                    target.classList.add('card-selected');
+                });
+                target.addEventListener('mouseleave', () => {
+                    corners.forEach(corner => {
+                        corner.style.transition = 'transform 0.3s cubic-bezier(0.77,0,0.175,1)';
+                        corner.style.transform = corner.classList.contains('corner-tl') ? 'translate(-150%, -150%)' :
+                            corner.classList.contains('corner-tr') ? 'translate(50%, -150%)' :
+                            corner.classList.contains('corner-br') ? 'translate(50%, 50%)' :
+                            'translate(-150%, 50%)';
+                    });
+                    cursorDot.style.background = '#fff';
+                    target.classList.remove('card-selected');
+                });
+                target.addEventListener('mousedown', () => {
+                    target.classList.add('card-selected-active');
+                });
+                target.addEventListener('mouseup', () => {
+                    target.classList.remove('card-selected-active');
+                });
+            });
+        // Slideshow de fondo moderno
+        const slides = document.querySelectorAll('.background-slideshow .slide');
+        let currentSlide = 0;
+        function showSlide(idx) {
+            slides.forEach((img, i) => {
+                if (i === idx) {
+                    img.classList.add('active');
+                    img.style.transform = 'translateX(0)';
+                } else {
+                    img.classList.remove('active');
+                    img.style.transform = 'translateX(-100vw)';
+                }
+            });
+        }
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+        showSlide(currentSlide);
     // Animación de botones con Anime.js
     const hasAnime = typeof anime !== 'undefined';
     const botones = document.querySelectorAll('button, .cta');
+    // Aplica animación loop solo a los botones que NO son del navbar
     botones.forEach(btn => {
+        if (!btn.classList.contains('nav-btn')) {
+            btn.classList.add('btn-loop');
+        }
         const ripple = document.createElement('span');
         ripple.className = 'pulse-ring';
         btn.appendChild(ripple);

@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+            <!-- Cursor personalizado tipo TargetCursor -->
+            <div id="target-cursor-wrapper" class="target-cursor-wrapper">
+                <div id="target-cursor-dot" class="target-cursor-dot"></div>
+                <div class="target-cursor-corner corner-tl"></div>
+                <div class="target-cursor-corner corner-tr"></div>
+                <div class="target-cursor-corner corner-br"></div>
+                <div class="target-cursor-corner corner-bl"></div>
+            </div>
+    <!-- Fondo slideshow moderno -->
+    <div class="background-slideshow">
+        <img src="img/1D.webp" class="slide active" alt="Fondo 1">
+        <img src="img/2D.jpg" class="slide" alt="Fondo 2">
+        <img src="img/3D.jpg" class="slide" alt="Fondo 3">
+        <img src="img/4D.webp" class="slide" alt="Fondo 4">
+        <img src="img/5D.jpg" class="slide" alt="Fondo 5">
+    </div>
     <header>
         <div class="brand" aria-label="AgroFuturoEC">
             <div class="logo">AgroFuturoEC</div>
@@ -23,25 +39,25 @@
     </header>
     <main>
         <section id="inicio" class="inicio-cards">
-            <div class="card card-top-left">
+            <div class="card card-top-left cursor-target">
                 <h2>Control Agrícola</h2>
                 <p>Monitorea tus cultivos en tiempo real.</p>
-                <button class="cta" data-action="control">Ir a panel</button>
+                <button class="cta cursor-target" data-action="control">Ir a panel</button>
             </div>
-            <div class="card card-top-right">
+            <div class="card card-top-right cursor-target">
                 <h2>Inventario</h2>
                 <p>Administra insumos y productos.</p>
-                <button class="cta" data-action="inventario">Ir a productos</button>
+                <button class="cta cursor-target" data-action="inventario">Ir a productos</button>
             </div>
-            <div class="card card-bottom-left">
+            <div class="card card-bottom-left cursor-target">
                 <h2>Finanzas</h2>
                 <p>Visualiza costos y ganancias.</p>
-                <button class="cta" data-action="finanzas">Ir a finanzas</button>
+                <button class="cta cursor-target" data-action="finanzas">Ir a finanzas</button>
             </div>
-            <div class="card card-bottom-right">
+            <div class="card card-bottom-right cursor-target">
                 <h2>Soporte</h2>
                 <p>Contacta a especialistas Aero Agro.</p>
-                <button class="cta" data-action="soporte">Ir a soporte</button>
+                <button class="cta cursor-target" data-action="soporte">Ir a soporte</button>
             </div>
         </section>
         
@@ -1226,7 +1242,7 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2025 Tu Negocio. Todos los derechos reservados.</p>
+        <p>&copy; 2025 AgroFuturoEC. Todos los derechos reservados.</p>
     </footer>
     <!-- Anime.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
